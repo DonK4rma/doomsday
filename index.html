@@ -17,10 +17,10 @@ function cdtd() {
 	hours %= 24;
         minutes %= 60;
         seconds %= 60;
-	document.getElementById("daysBox").innerHTML = days + ":";
-	document.getElementById("hoursBox").innerHTML = hours + ":";
-	document.getElementById("minsBox").innerHTML = minutes + ":";
-	document.getElementById("secsBox").innerHTML = seconds;
+	document.getElementById("daysBox").innerHTML = days + "d";
+	document.getElementById("hoursBox").innerHTML = hours + "h";
+	document.getElementById("minsBox").innerHTML = minutes + "m";
+	document.getElementById("secsBox").innerHTML = seconds + "s";
 	var timer = setTimeout('cdtd()',1000);
 }
 </script>
@@ -34,7 +34,7 @@ body {
 
 img {
     width: 100%;
-    height: 600px;
+    height: 550px;
     object-fit: cover;
 }
 
@@ -63,7 +63,7 @@ img {
 </style>
 </head>
 <body>
-<img src="untitled.png">
+<img src="render.gif">
 <div class="wrapper">
     <div class="time" id="daysBox"></div>
     <div class="time" id="hoursBox"></div>
